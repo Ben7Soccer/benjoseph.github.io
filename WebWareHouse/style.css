@@ -1,0 +1,30 @@
+body{
+	background-color:powderblue;
+}
+h1{
+	color:white;
+	font-size:45px;
+	text-align:center;
+	font-weight:bolder;
+	font-stretch:extra-expanded;
+}
+#MainHeading{
+	background-color:red;
+}
+#MainTable{
+	width:1300px;
+	
+}
+#Navigation{
+	background-color:red;
+	color:white;
+}
+#NavigationTable{
+	width:200px;
+	height:500px;
+	text-align:center;
+	background-color:white;
+}
+a:hover{
+	background-color:gray;
+}

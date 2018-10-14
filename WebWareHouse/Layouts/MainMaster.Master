@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="WebWareHouse.Layouts.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../Styles/Style.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 22px;
+        }
+        .auto-style2 {
+            width: 318px;
+        }
+        .auto-style3 {
+            width: 22px;
+            height: 71px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table id="MainTable">
+<tr id="MainHeading">
+<td class="auto-style3" width="500px">
+<h3>WebWareHouse.com</h3>
+</td>
+</tr>
+<tr>
+<td class="auto-style1">
+
+<table id="NavigationTable">
+<tr id="Navigation">
+<td class="auto-style2">
+MENU
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#"> <asp:LinkButton ID="lbtnHome" runat="server" OnClick="lbtnHome_Click">Home</asp:LinkButton></a>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#"> <asp:LinkButton ID="lbtnShoppingCart" runat="server" OnClick="lbtnShoppingCart_Click">Shopping Cart</asp:LinkButton></a>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#">Specials</a>
+</td>
+</tr>
+<tr id="Navigation">
+<td class="auto-style2">
+CATEGORY
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+    <asp:LinkButton ID="lbtnDatabase" runat="server" OnClick="lbtnDatabase_Click">Database</asp:LinkButton>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#">Graphics</a>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#">Hardware</a>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#">Software</a>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#">Systems</a>
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<a href="#"> <asp:LinkButton ID="lbtnLogOut" runat="server" OnClick="lbtnLogOut_Click">Log Out</asp:LinkButton> </a>
+</td>
+</tr>
+<tr id="Navigation">
+<td class="auto-style2">
+SEARCH
+</td>
+</tr>
+<tr>
+<td class="auto-style2">
+<table>
+<tr>
+<td>
+<asp:TextBox ID="txtSearchBox" runat="server" Width="161px"></asp:TextBox>
+</td>
+<td>
+<asp:Button ID="btnSearch" runat="server" Text="Go" OnClick="btnSearch_Click" Width="44px" />
+</td>
+</tr>
+</table>
+</td>      
+</tr>
+
+</table>
+    
+</td>
+<td>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+</td>
+    
+</tr>
+</table>
+
+    </div>
+    </form>
+</body>
+</html>
